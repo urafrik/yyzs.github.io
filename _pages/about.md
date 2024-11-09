@@ -1,49 +1,48 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Academic Pages 是一个适用于学术个人网站的GitHub Pages模板，随时可供复刻"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+这是一个由 [Academic Pages 模板](https://github.com/academicpages/academicpages.github.io)支持、在 GitHub Pages 上托管的网站的主页。[GitHub Pages](https://pages.github.com) 是一项免费的服务，网站内容可以通过存储在 GitHub 仓库中的代码和数据自动更新。该模板基于 Michael Rose 创建的 [Minimal Mistakes Jekyll 主题](https://mmistakes.github.io/minimal-mistakes/)复刻，并扩展了适用于学术内容的支持，如论文、演讲、教学、作品集、博客文章和动态生成的简历。你可以立即复刻 [这个模板](https://github.com/academicpages/academicpages.github.io)，修改配置和 Markdown 文件，添加自己的 PDF 和其他内容，免费拥有自己的网站，无广告！
 
-A data-driven personal website
+一个数据驱动的个人网站
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+与许多其他基于 Jekyll 的 GitHub Pages 模板一样，Academic Pages 将网站的内容与形式分离。网站的内容和元数据存储在结构化的 Markdown 文件中，而其他文件则构成主题，指定如何将内容和元数据转换为 HTML 页面。你可以将这些不同的 Markdown (.md)、YAML (.yml)、HTML 和 CSS 文件存储在公开的 GitHub 仓库中。每次你提交并推送更新至仓库时，[GitHub Pages](https://pages.github.com/) 服务会基于这些文件创建静态 HTML 页面，并免费托管在 GitHub 服务器上。
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+许多动态内容管理系统（如 WordPress）的功能可以通过这种方式实现，所需计算资源更少，也不易受到黑客攻击或DDoS的影响。你还可以在不修改网站内容的情况下任意调整主题设计。如果你在 Jekyll/HTML/CSS 上遇到无法修复的问题，描述你的演讲、论文等的 Markdown 文件依然是安全的。你可以回滚更改，甚至删除仓库并重新开始——只要保存好这些 Markdown 文件！最后，你也可以编写脚本来处理站点上的结构化数据，例如[这个脚本](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb)，用于分析演讲页面中的元数据并展示你演讲过的地点地图（例如[此地图](https://academicpages.github.io/talkmap.html)）。
 
-Getting started
+开始使用
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+1. 注册一个 GitHub 账户（如果还没有的话）并确认邮箱（必需）
+1. 点击页面右上角的“Use this template”按钮复刻 [此模板](https://github.com/academicpages/academicpages.github.io)
+1. 进入仓库的设置页面（在“Code”选项卡右侧）。将仓库重命名为“[你的 GitHub 用户名].github.io”，这将成为你网站的 URL
+1. 设置全站配置并创建内容和元数据（详见下文——也可参考 [这组更改](http://archive.is/3TPas)，展示了如何为用户名“getorg-testacct”的用户设置 [示例站点](https://getorg-testacct.github.io)）
+1. 上传任何文件（如 PDF、.zip 文件等）到 files/ 目录。这些文件会显示在 https://[你的 GitHub 用户名].github.io/files/example.pdf
+1. 前往仓库设置页面，检查“GitHub Pages”部分的状态
 
-Site-wide configuration
+全站配置
 ------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+网站的主要配置文件位于根目录的 [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml) 中，定义了侧边栏和其他站点功能的内容。你需要用自己的信息和 GitHub 仓库的内容替换默认变量。顶级菜单的配置文件位于 [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml)。例如，如果你没有作品集或博客文章，可以从 navigation.yml 文件中移除这些项目以从头部导航中删除它们。
 
-Create content & metadata
+创建内容和元数据
 ------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+站点内容使用独立的 Markdown 文件存储，每种内容类型有一个目录，如 _publications、_talks、_posts、_teaching 或 _pages。例如，每个演讲对应 [_talks 目录](https://github.com/academicpages/academicpages.github.io/tree/master/_talks)中的一个 Markdown 文件。每个 Markdown 文件顶部包含 YAML 格式的结构化数据，主题会解析这些数据生成各种页面。演讲的结构化数据用于生成 [演讲页面](https://academicpages.github.io/talks)上的列表，每个具体演讲的 [单独页面](https://academicpages.github.io/talks/2012-03-01-talk-1)，[简历页面](https://academicpages.github.io/cv)的演讲部分，以及[演讲地点地图](https://academicpages.github.io/talkmap.html)（如果运行 [python 文件](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py)或 [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb)）。
 
-**Markdown generator**
+**Markdown 文件生成器**
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+该仓库包含一组 [Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator)，可将包含演讲或展示的结构化数据的 CSV 文件转换为适用于 Academic Pages 模板的 Markdown 文件。示例 CSV 文件是我用于创建个人网站 stuartgeiger.com 的数据。我通常会将我的出版物和演讲记录在电子表格中，然后运行 notebook 中的代码生成 Markdown 文件，接着提交并推送至 GitHub 仓库。
 
-How to edit your site's GitHub repository
+如何编辑站点的 GitHub 仓库
 ------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+许多人使用 git 客户端在本地计算机上创建文件，然后推送到 GitHub 的服务器。如果不熟悉 git，可以直接在 github.com 界面上编辑配置和 Markdown 文件。进入一个文件（例如 [这个文件](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md)），点击右上角的铅笔图标（在“Raw | Blame | History”按钮右侧）。可以点击铅笔图标右侧的垃圾桶图标删除文件。也可以在目录中点击“Create new file”或“Upload files”按钮创建或上传新文件。
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+示例：编辑演讲的 Markdown 文件
+![编辑演讲的 Markdown 文件](/images/editing-talk.png)
 
-For more info
+更多信息
 ------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+有关 Academic Pages 配置的更多信息，请参考 [指南](https://academicpages.github.io/markdown/)、[不断增长的 Wiki](https://github.com/academicpages/academicpages.github.io/wiki)，或者在 [GitHub 上提问](https://github.com/academicpages/academicpages.github.io/discussions)。[Minimal Mistakes 主题的指南](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)（该主题派生自此主题）也可能有帮助。
